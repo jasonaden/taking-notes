@@ -29,7 +29,7 @@ var PATHS = {
   client: {
     ts: ['client/**/*.ts'],
     html: 'client/**/*.html',
-    css: 'client/**/*.css',
+    css: ['node_modules/bootstrap/dist/css/bootstrap.css','client/**/*.css'],
     img: 'client/**/*.{svg,jpg,png,ico}'
   },
   dist: 'dist',
