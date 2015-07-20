@@ -2,6 +2,8 @@
 
 // Angular 2
 import {Component, View, coreDirectives} from 'angular2/angular2';
+import {Navigation} from 'components/navigation/navigation';
+import {Panel} from 'components/ui-kit/panel';
 
 // App: Top Level Component
 @Component({
@@ -9,26 +11,8 @@ import {Component, View, coreDirectives} from 'angular2/angular2';
 })
 @View({
   // needed in order to tell Angular's compiler what's in the template
-  directives: [coreDirectives],
-  styles: [`
-    .title { margin: 0.5rem 0; }
-    .main-content { padding: 0.5rem; }
-    .main-nav { margin-bottom: 0.5rem; }
-    .error-message {
-      display: block;
-      color: red;
-    }
-  `],
-  template: `
-  <section class="main-content">
-    <h1 class="title">{{ title }}</h1>
-    <nav class="main-nav">
-      <a >Home</a>
-      <a >Dashboard</a>
-      <a >Todo</a>
-    </nav>
-  </section>
-  `
+  directives: [coreDirectives, Navigation, Panel],
+  templateUrl: '/client/components/app.html'
 })
 
 export class App {

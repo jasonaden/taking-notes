@@ -15,16 +15,5 @@
     "filesGlob": [
         "typings/tsd.d.ts",
         "client/**/*.ts"
-    ],
-    "files": [
-        "typings/tsd.d.ts",
-        "client/bootstrap.ts",
-        "client/components/app.ts",
-        "client/components/dashboard/dashboard.ts",
-        "client/components/home/home.ts",
-        "client/components/todo/todo.ts",
-        "client/directives/Autofocus.ts",
-        "client/directives/XLarge.ts",
-        "client/services/TodoService.ts"
     ]
 }
